@@ -2,3 +2,5 @@
 History/
 __Previews/
 Project Logs for nixie_pcb/
+*.raw
+*.step
