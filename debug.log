@@ -47,3 +47,4 @@
 [0226/223358:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
 [0226/223359:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
 [0226/223402:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0314/104806:ERROR:browser_gpu_channel_host_factory.cc(119)] Failed to launch GPU process.
