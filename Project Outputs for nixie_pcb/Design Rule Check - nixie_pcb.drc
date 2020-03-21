@@ -1,0 +1,64 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Булат\Desktop\nixie_pcb\nixie_pcb.PcbDoc
+Date     : 21.03.2020
+Time     : 15:34:59
+
+Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=Yes) (InComponent('AE1')),(IsFill)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net 3V3 Between Pad D3-4(54.7mm,9.4mm) on Bottom Layer And Track (54.73mm,1.43mm)(54.73mm,3.57mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad U1-49(65.6mm,7.5mm) on Bottom Layer And Track (71.96mm,5.6mm)(72.03mm,5.53mm) on Bottom Layer 
+Rule Violations :2
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.2mm) (Max=1mm) (Preferred=0.254mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)
+   Violation between Hole Size Constraint: (3mm > 2.54mm) Pad Free-0(3mm,38mm) on Multi-Layer Actual Hole Size = 3mm
+   Violation between Hole Size Constraint: (3mm > 2.54mm) Pad Free-1(3mm,4mm) on Multi-Layer Actual Hole Size = 3mm
+   Violation between Hole Size Constraint: (3mm > 2.54mm) Pad Free-1(82mm,38mm) on Multi-Layer Actual Hole Size = 3mm
+   Violation between Hole Size Constraint: (3mm > 2.54mm) Pad Free-1(82mm,4mm) on Multi-Layer Actual Hole Size = 3mm
+Rule Violations :4
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+   Violation between Net Antennae: Via (61.9mm,3.1mm) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (63.8mm,1.9mm) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (66.2mm,13mm) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (68.3mm,1.9mm) from Top Layer to Bottom Layer 
+Rule Violations :4
+
+Processing Rule : Room HSSW3 (Bounding Region = (75.433mm, 54.5mm, 87.533mm, 62.1mm) (InComponentClass('HSSW3'))
+Rule Violations :0
+
+Processing Rule : Room HSSW4 (Bounding Region = (89mm, 54.5mm, 101.1mm, 62.1mm) (InComponentClass('HSSW4'))
+Rule Violations :0
+
+Processing Rule : Room HSSW2 (Bounding Region = (61.867mm, 54.5mm, 73.967mm, 62.1mm) (InComponentClass('HSSW2'))
+Rule Violations :0
+
+Processing Rule : Room HSSW1 (Bounding Region = (48.3mm, 54.5mm, 60.4mm, 62.1mm) (InComponentClass('HSSW1'))
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=40mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 10
+Waived Violations : 0
+Time Elapsed        : 00:00:02
