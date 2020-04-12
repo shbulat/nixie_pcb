@@ -1,6 +1,9 @@
 
 #include <WiFi.h>
 #include <soc/rtc.h>
+#include <DNSServer.h>
+#include <WebServer.h>
+#include <WiFiManager.h>
 
 // Replace with your network credentials
 const char* ssid     = "ASUS";
@@ -137,8 +140,8 @@ void IRAM_ATTR onTimer() {
   digitalWrite(lamp_pins[cur_lamp], LOW);
   if(++cur_lamp == 4) cur_lamp = 0;
   int temp;
-  if(cur_lamp < 2) temp = _timeinfo.tm_sec;
-  else temp = _timeinfo.tm_sec;
+  if(cur_lamp < 2) temp = _timeinfo.tm_hour;
+  else temp = _timeinfo.tm_min;
   uint8_t num;
   if(cur_lamp % 2) num = temp % 10;
   else num = temp / 10; 
@@ -163,12 +166,14 @@ void init_timer(void) {
 void setup() {
   Serial.begin(115200);
   init_hw_staff();
-  connect_wifi();
+
+  WiFiManager wifiManager;
+  wifiManager.autoConnect("AutoConnectAP");
+  //connect_wifi();
+
   init_time();
   configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
   init_timer();
-  //  WiFi.disconnect(true);
-  //  WiFi.mode(WIFI_OFF);
 }
 
 void update_time(void) {
