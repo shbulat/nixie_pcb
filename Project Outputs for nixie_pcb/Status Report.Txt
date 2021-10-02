@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [nixie_pcb.PcbDoc]
+   Generated File[nixie_pcb.TXT]
+   Generated File[nixie_pcb.LDP]
+   Generated File[nixie_pcb.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 23:06:59 On 13.03.2021

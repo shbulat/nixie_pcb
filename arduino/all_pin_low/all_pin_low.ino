@@ -137,8 +137,8 @@ void IRAM_ATTR onTimer() {
   digitalWrite(lamp_pins[cur_lamp], LOW);
   if(++cur_lamp == 4) cur_lamp = 0;
   int temp;
-  if(cur_lamp < 2) temp = _timeinfo.tm_sec;
-  else temp = _timeinfo.tm_sec;
+  if(cur_lamp < 2) temp = _timeinfo.tm_hour;
+  else temp = _timeinfo.tm_min;
   uint8_t num;
   if(cur_lamp % 2) num = temp % 10;
   else num = temp / 10; 
