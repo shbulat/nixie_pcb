@@ -1,6 +1,9 @@
 
 #include <WiFi.h>
 #include <soc/rtc.h>
+#include <DNSServer.h>
+#include <WebServer.h>
+#include <WiFiManager.h>
 
 // Replace with your network credentials
 const char* ssid     = "ASUS";
@@ -163,12 +166,14 @@ void init_timer(void) {
 void setup() {
   Serial.begin(115200);
   init_hw_staff();
-  connect_wifi();
+
+  WiFiManager wifiManager;
+  wifiManager.autoConnect("AutoConnectAP");
+  //connect_wifi();
+
   init_time();
   configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
   init_timer();
-  //  WiFi.disconnect(true);
-  //  WiFi.mode(WIFI_OFF);
 }
 
 void update_time(void) {
